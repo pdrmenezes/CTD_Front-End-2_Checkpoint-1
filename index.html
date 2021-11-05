@@ -17,6 +17,16 @@
                 <input type="text" name="form-title" id="form-title" placeholder="Title">
                 <input type="text" name="form-description" id="form-description" placeholder="Description">
                 <input type="text" name="form-url" id="form-url" placeholder="Cover URL">
+                <div class="inline-block">
+                    <label for="radio-movie">Movie</label>
+                    <input type="radio" name="form-movie-show" id="radio-movie" value="Movie">
+                    <label for="radio-show" id="label-2">Show</label>
+                    <input type="radio" name="form-movie-show" id="radio-show" value="Show">
+                </div>
+                <div class="inline-block">
+                    <label for="watched">Watched</label>
+                    <input type="checkbox" name="form-watched" id="watched">
+                </div>
                 <input type="submit" id="btn" value="add" class="button">
             </form>
         </section>
@@ -25,8 +35,10 @@
             <section class="movies-grid" id="movies-grid">
                 <div class="movie">
                     <img class="thumbnail" src="https://picsum.photos/800/500?random=2">
+                    <span class="movie-tag">Movie</span>
                     <h1 class="movie-title">Lorem ipsum dolor</h1>
                     <p class="movie-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, explicabo!</p>
+                    <p class="movie-watched">✅ Watched</time>
                 </div>
 
             </section>
